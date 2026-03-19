@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f59e0b" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#4f46e5" stop-opacity="0.28"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.78" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M300 115 L340 90 L460 90 L500 115"/>
+    <path d="M350 105 L330 175 L400 220 L470 175 L450 105"/>
+    <path d="M315 205 L290 420 L510 420 L485 205"/>
+    <path d="M400 220 L400 420"/>
+  </g>
+  <text x="50%" y="78%" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" fill="#ffffff" fill-opacity="0.9">
+    Shirt
+  </text>
+</svg>
+

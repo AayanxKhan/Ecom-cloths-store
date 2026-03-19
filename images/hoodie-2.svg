@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0ea5e9" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#4f46e5" stop-opacity="0.32"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.78" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M300 120 L340 90 L460 90 L500 120"/>
+    <path d="M270 175 L340 120 L460 120 L530 175"/>
+    <path d="M310 165 L280 420 L520 420 L490 165"/>
+    <path d="M400 160 C380 195 360 190 350 170"/>
+    <path d="M400 160 C420 195 440 190 450 170"/>
+    <path d="M370 215 C380 230 420 230 430 215"/>
+  </g>
+  <text x="50%" y="78%" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" fill="#ffffff" fill-opacity="0.9">
+    Hoodie
+  </text>
+</svg>
+

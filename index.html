@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClothCraft - Clothing Shop</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- EmailJS SDK (client-side only, no backend needed) -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <a class="brand" href="#">
+          <span class="brand__logo" aria-hidden="true">NT</span>
+          <span class="brand__name">Nitag</span>
+        </a>
+
+        <div class="nav__search" role="search">
+          <input
+            id="searchInput"
+            class="nav__searchInput"
+            type="search"
+            placeholder="Search shirts, tees, hoodies..."
+            aria-label="Search products"
+          />
+        </div>
+
+        <nav class="nav">
+          <a class="nav__link" href="#products">Products</a>
+          <button class="nav__cta" type="button" id="quickOrderBtn">Quick Order</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero__inner">
+          <div class="hero__text">
+            <h1>Fresh Fashion. Fast Orders.</h1>
+            <p>
+              Browse shirts, t-shirts, and hoodies. Tap <b>Buy Now</b> to place a Cash on Delivery
+              order. Your order is emailed to the store owner.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#products">Shop Now</a>
+              <button class="btn btn--ghost" type="button" id="heroOrderBtn">Order Now</button>
+            </div>
+
+            <div class="hero__badges" aria-label="Store benefits">
+              <span class="badge">Cash on Delivery</span>
+              <span class="badge">Email Orders</span>
+              <span class="badge">Simple Checkout</span>
+            </div>
+          </div>
+
+          <div class="hero__image" aria-hidden="true">
+            <div class="hero__banner">
+              <p class="hero__bannerTop">Popular Picks</p>
+              <h2>Tees & Hoodies</h2>
+              <p class="hero__bannerBottom">Tap any product to order in seconds.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="products" id="products">
+        <div class="container">
+          <div class="productToolbar">
+            <div class="sectionHeader">
+              <h2>Products</h2>
+              <p>Pick one product and we will email the order to the owner.</p>
+            </div>
+            <div class="productToolbar__meta">
+              <span id="resultsCount" class="resultsCount"></span>
+            </div>
+          </div>
+
+          <div class="productGrid" role="list">
+            <!-- Product 1 -->
+            <article class="productCard" role="listitem" data-product-name="Classic Shirt">
+              <img class="productCard__img" src="./images/shirt-1.svg" alt="Classic Shirt" loading="lazy" />
+              <div class="productCard__body">
+                <h3 class="productCard__title">Classic Shirt</h3>
+                <p class="productCard__price">$29.00</p>
+                <button class="btn btn--primary buyBtn" type="button" data-product-name="Classic Shirt">
+                  Buy Now
+                </button>
+              </div>
+            </article>
+
+            <!-- Product 2 -->
+            <article class="productCard" role="listitem" data-product-name="Everyday T-Shirt">
+              <img class="productCard__img" src="./images/tshirt-1.svg" alt="Everyday T-Shirt" loading="lazy" />
+              <div class="productCard__body">
+                <h3 class="productCard__title">Everyday T-Shirt</h3>
+                <p class="productCard__price">$15.00</p>
+                <button class="btn btn--primary buyBtn" type="button" data-product-name="Everyday T-Shirt">
+                  Buy Now
+                </button>
+              </div>
+            </article>
+
+            <!-- Product 3 -->
+            <article class="productCard" role="listitem" data-product-name="Cozy Hoodie">
+              <img class="productCard__img" src="./images/hoodie-1.svg" alt="Cozy Hoodie" loading="lazy" />
+              <div class="productCard__body">
+                <h3 class="productCard__title">Cozy Hoodie</h3>
+                <p class="productCard__price">$45.00</p>
+                <button class="btn btn--primary buyBtn" type="button" data-product-name="Cozy Hoodie">
+                  Buy Now
+                </button>
+              </div>
+            </article>
+
+            <!-- Product 4 -->
+            <article class="productCard" role="listitem" data-product-name="Slim Fit Shirt">
+              <img class="productCard__img" src="./images/shirt-2.svg" alt="Slim Fit Shirt" loading="lazy" />
+              <div class="productCard__body">
+                <h3 class="productCard__title">Slim Fit Shirt</h3>
+                <p class="productCard__price">$35.00</p>
+                <button class="btn btn--primary buyBtn" type="button" data-product-name="Slim Fit Shirt">
+                  Buy Now
+                </button>
+              </div>
+            </article>
+
+            <!-- Product 5 -->
+            <article class="productCard" role="listitem" data-product-name="Graphic T-Shirt">
+              <img class="productCard__img" src="./images/tshirt-2.svg" alt="Graphic T-Shirt" loading="lazy" />
+              <div class="productCard__body">
+                <h3 class="productCard__title">Graphic T-Shirt</h3>
+                <p class="productCard__price">$18.00</p>
+                <button class="btn btn--primary buyBtn" type="button" data-product-name="Graphic T-Shirt">
+                  Buy Now
+                </button>
+              </div>
+            </article>
+
+            <!-- Product 6 -->
+            <article class="productCard" role="listitem" data-product-name="Classic Hoodie">
+              <img class="productCard__img" src="./images/hoodie-2.svg" alt="Classic Hoodie" loading="lazy" />
+              <div class="productCard__body">
+                <h3 class="productCard__title">Classic Hoodie</h3>
+                <p class="productCard__price">$50.00</p>
+                <button class="btn btn--primary buyBtn" type="button" data-product-name="Classic Hoodie">
+                  Buy Now
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Order Popup -->
+      <div class="overlay hidden" id="orderOverlay" aria-hidden="true"></div>
+
+      <section class="popup hidden" id="orderPopup" aria-labelledby="orderTitle" aria-modal="true" role="dialog">
+        <div class="container popup__inner">
+          <div class="popup__card">
+            <div class="popup__header">
+              <h2 id="orderTitle">Place Your Order</h2>
+              <button class="iconBtn" type="button" id="closePopupBtn" aria-label="Close order form">
+                X
+              </button>
+            </div>
+
+            <p class="popup__note">
+              Cash on Delivery. The store owner will confirm your order by email/phone.
+              <br />
+              Tip: test using a local server (not `file://`) so EmailJS can send.
+            </p>
+
+            <div id="formMessage" class="formMessage hidden" role="status" aria-live="polite"></div>
+            <div id="formError" class="formError hidden" role="alert"></div>
+
+            <form id="orderForm" autocomplete="on">
+              <div class="formGrid">
+                <label class="field">
+                  <span>Full Name</span>
+                  <input id="fullName" name="full_name" type="text" placeholder="e.g., Ayesha Khan" required />
+                </label>
+
+                <label class="field">
+                  <span>Phone Number</span>
+                  <input id="phoneNumber" name="phone_number" type="tel" placeholder="e.g., 0300 1234567" required />
+                </label>
+
+                <label class="field field--full">
+                  <span>Address</span>
+                  <textarea id="address" name="address" rows="3" placeholder="Street, City, Country" required></textarea>
+                </label>
+
+                <label class="field field--full">
+                  <span>Product Name</span>
+                  <input id="productName" name="product_name" type="text" required readonly />
+                </label>
+              </div>
+
+              <div class="popup__actions">
+                <button class="btn btn--primary" type="submit" id="submitBtn">
+                  <span id="submitText">Submit Order</span>
+                  <span class="spinner hidden" id="submitSpinner" aria-hidden="true"></span>
+                </button>
+
+                <button class="btn btn--ghost" type="button" id="cancelBtn">Cancel</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>Copyright (c) <span id="year"></span> ClothCraft. All rights reserved.</p>
+        <p class="footer__small">Orders are emailed to the store owner using EmailJS.</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+

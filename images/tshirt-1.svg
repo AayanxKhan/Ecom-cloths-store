@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22c55e" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#4f46e5" stop-opacity="0.30"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.78" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M285 120 L340 95 L460 95 L515 120"/>
+    <path d="M330 105 L305 170 L365 205 L335 420 L465 420 L435 205 L495 170 L470 105"/>
+    <path d="M390 240 C395 210 405 210 410 240 C420 290 380 290 390 240 Z"/>
+  </g>
+  <text x="50%" y="78%" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" fill="#ffffff" fill-opacity="0.9">
+    T-Shirt
+  </text>
+</svg>
+
